@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/media"
+        android:icon="@drawable/logo2"
+        android:title="Upload Media"
+        />
+    <item android:id="@+id/manage"
+        android:icon="@drawable/logo"
+        android:title="Manage Group" />
+
+
+</menu>

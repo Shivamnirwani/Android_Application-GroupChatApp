@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".Group">
+    <LinearLayout
+        android:id="@+id/layout_gchat_chatbox"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Voilet_Dark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    <RelativeLayout
+        android:elevation="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_gchat_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:paddingLeft="16dp"
+            android:layout_toStartOf="@+id/addbutton"
+            android:background="@color/Outer_Space"
+            android:textColor="@color/Snow"
+            android:textColorHint="@color/Silver"
+            android:hint="Enter Email to Add"
+            android:inputType="text"
+            android:maxLines="6"
+            android:minHeight="48dp"
+            tools:ignore="Autofill" />
+
+        <Button
+            android:id="@+id/addbutton"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/Dark_Teal"
+            android:text="Add"
+            android:textColor="@color/Snow" />
+    </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Group Members"
+            android:textColor="@color/Silver"
+            android:background="@android:color/transparent"
+            ></TextView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/grouprecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Voilet_Dark"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@+id/layout_delete"
+        app:layout_constraintTop_toBottomOf="@id/layout_gchat_chatbox"
+        android:elevation="1dp"
+        />
+    <RelativeLayout
+        android:elevation="20dp"
+        android:id="@+id/layout_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/grouprecycler"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/deletebutton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/Pumpkin_Dark"
+            android:text="Delete"
+            android:textColor="@color/Snow" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Outer_Space"
+    android:elevation="2dp"
+    android:id="@+id/item_click_support"
+    android:layout_marginTop="3dp">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shade"
+        android:contentDescription="TODO"
+        android:elevation="1dp"
+        android:src="@drawable/persona"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        >
+
+    </ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/Outer_Space"
+        android:layout_marginLeft="0dp">
+
+        <TextView
+            android:id="@+id/memberName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+
+            android:paddingTop="10dp"
+            android:text="Member 1"
+            android:textColor="@color/Silver_Light"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/removeMember"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:text="-"
+            android:textSize="40dp"
+            android:layout_marginTop="-10dp"
+            android:background="@color/Pumpkin_Dark"
+            android:elevation="5dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

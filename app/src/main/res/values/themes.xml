@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GroupChatApp" parent="Theme.AppCompat.Light.DarkActionBar">
+
+<!--        <item name="android:background">@color/Outer_Space</item>-->
+        <item name="android:itemBackground">@color/Outer_Space</item>
+        <item name="android:textColor">@color/Snow</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Outer_Space</item>
+        <item name="colorPrimaryVariant">@color/Outer_Space</item>
+        <item name="colorOnPrimary">@color/Snow</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Voilet</item>
+        <item name="colorSecondaryVariant">@color/Voilet</item>
+        <item name="colorOnSecondary">@color/Snow</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:ambientShadowAlpha">1</item>
+<!--        <item name="android:spotShadowAlpha">1</item>-->
+    </style>
+    <style name="Theme.GroupChatApp.WindowTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">@color/Outer_Space</item>
+        <item name="android:textColor">@color/Silver</item>
+        <item name="android:textColorPrimary">#f3f3f3</item>
+    </style>
+</resources>

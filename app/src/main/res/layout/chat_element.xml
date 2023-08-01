@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Voilet_Dark"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagechat"
+        android:visibility="gone"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="15"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="5dp"
+                android:background="@drawable/squareshade"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/imageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Silver"
+                    android:text="Kaushal"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="5dp"
+                    android:textSize="20dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imagepic"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:src="@drawable/chat"
+                    android:contentDescription="TODO" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selfchat"
+        android:visibility="gone"
+        >
+        <Space
+            android:elevation="0dp"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="15"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="5dp"
+                android:background="@drawable/squareshade"
+                android:layout_margin="10dp"
+                >
+
+            <TextView
+                android:id="@+id/selffirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Tiffany_Blue"
+                android:text="Kaushal"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/selfmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Snow"
+                android:text=""
+                android:paddingVertical="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/elsechat"
+        android:visibility="gone"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:elevation="5dp"
+                android:background="@drawable/squareshade"
+                android:layout_margin="10dp"
+                >
+            <TextView
+                android:id="@+id/elsefirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Pumpkin"
+                android:text="Kaushal"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/elsemessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Snow"
+                android:text="Name"
+                android:paddingVertical="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Space
+            android:elevation="0dp"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            />
+    </LinearLayout>
+</LinearLayout>
